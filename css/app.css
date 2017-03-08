@@ -1,0 +1,67 @@
+#tile-container{
+	width: 100%;
+	height: 100%;
+	background-color: #A63B46;
+	position: absolute;
+}
+.tile{
+	position: relative;
+  	perspective: 800px;
+}
+.tile-area {
+	background-color: #fff;
+	position: relative;
+	display: inline-block;
+	box-shadow: 0 0px 0px 0px rgba(255,255,255,0);
+	transition: background-color 400ms ease-out,
+				box-shadow 400ms ease-in;
+}
+.tile-area:hover{
+	box-shadow: 0 8px 16px 0px rgba(0,0,0,0.3);
+	z-index: 10;
+}
+.tile-red:hover{
+	background-color: #A63B46;
+}
+.tile-blue:hover{
+	background-color: #BBDAF2;
+}
+.tile-yellow:hover{
+	background-color: #D9C758;
+}
+.tile-green:hover{
+	background-color: #4F7053;
+}
+.tile-orange:hover{
+	background-color: #D77A53;
+}
+
+#card {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+#card figure {
+  margin: 0;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+#card.flipped {
+  transform: rotateY( 180deg );
+}
+#card .front {
+	background: #A63B46;
+}
+#card .back {
+  background: #BBDAF2;
+  transform: rotateY( 180deg );
+}
+
+#card.flipped {
+  transform: rotateY( 180deg );
+}
